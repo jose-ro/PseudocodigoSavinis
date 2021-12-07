@@ -1,0 +1,64 @@
+SENAI – Curso Programador de Front-End – 2021 – Turma 3
+Disciplina: Lógica de Programação – UC8
+Atividade 1:  Situação-Problema: Cadastro de Eventos da Empresa Savinis
+
+Pseudocódigo:
+
+Algoritmo “eventosSavinis”
+
+var
+dataAtual, dataDoEvento, arrayParticipante[Nome, Sobrenome, Idade, Evento ]: String;
+limiteDeParticipantes <-- 0, xav <-- 0: inteiro;
+
+INICIO
+	
+escrever (“digite o nome do participante:  ”)
+	ler (arrayParticipante[0];
+escrever (“digite o sobrenome do participante:  ”)
+	ler (arrayParticipante[1];
+escrever (“digite a idade do participante:  ”)
+	ler (arrayParticipante[2];
+escrever (“digite o nome do evento:  ”)
+	ler (arrayParticipante[3];
+	escrever (“Data atual”)
+ler (dataAtual);
+escrever (“digite a data do evento (DD/MM/AAAA:  ”)
+	ler (dataDoEvento);
+	se (dataDataDoEvento < dataAtual) então
+	     escrever(“Data inválida: Evento já aconteceu!)
+	senão
+   	  para (índice de 0 até índice < 100) faça
+               se ((índice = 0 E idadeDoParticipante1[2]) >= idadeMinima) então
+                  escrever(Nome, Sobrenome, Idade e Evento); //primeiro participante
+                  limiteDeParticipantes  limiteDeParticipantes  + 1;
+               senão
+		  xav <-- 1;
+               fim-se 
+	       se ((índice = 1 E idadeDoParticipante2[2]) >= idadeMinima) então
+                  escrever(Nome, Sobrenome, Idade e Evento);//segundo participante
+                  limiteDeParticipantes <--  limiteDeParticipantes  + 1;
+               senão
+		  xav <-- 2;
+               fim-se 
+  	       se ((índice = 2 E idadeDoParticipante3[2]) >= idadeMinima) então
+                  escrever(Nome, Sobrenome, Idade e Evento);
+                  limiteDeParticipantes <-- limiteDeParticipantes  + 1;
+               senão
+		  ligar xav <--  3;
+               fim-se 
+	   fim-para
+        fim-se       
+        caso (xav)  
+              xav = “1”: escrever(“nome do participante 1”);
+                         escrever(“candidato menor de 18 anos”);  
+              xav = “2”: escrever(“nome do participante 2”);
+                         escrever(“candidato menor de 18 anos”);  
+              xav = “3”: escrever(“nome do participante 3”);
+                         escrever(“candidato menor de 18 anos”);  
+	fim-caso
+        se (limiteDeParticipantes >= 100) então
+            escrever(“Cadastro não permitido: Capacidade do Evento esgotada!”);
+        senão   
+            escrever(“Ainda há vaga(s) a ser(em) preenchida(s)!”);
+        fim-se
+FIM
